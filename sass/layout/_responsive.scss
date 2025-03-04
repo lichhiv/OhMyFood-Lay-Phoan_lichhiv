@@ -1,0 +1,64 @@
+// Pour les tablettes et desktop
+@media screen and (min-width: 768px) {
+    .card-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: space-between;
+
+        .card-menu {
+            flex: 0 0 calc(50% - 12.5px); // Pour 2 colonnes avec gap de 25px
+        }
+    }
+
+    .menu-card {
+        max-width: 1200px;
+        margin: -50px auto 0;
+        padding: 30px 50px;
+    }
+
+    header {
+        justify-content: center;
+        padding: 20px;
+
+        img {
+            width: 200px;
+            margin: 0;
+        }
+    }
+
+    .img-container {
+        height: 50vh;
+    }
+
+    footer {
+        .footer {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px;
+
+            img {
+                width: 200px;
+            }
+
+            ul {
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+// Pour les grands écrans
+@media screen and (min-width: 1024px) {
+    .card-content {
+        .card-menu {
+            flex: 0 0 calc(33.333% - 17px); // Pour 3 colonnes avec gap de 25px
+        }
+    }
+
+    .menu-card {
+        padding: 50px 80px;
+    }
+}
