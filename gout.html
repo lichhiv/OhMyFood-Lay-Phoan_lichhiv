@@ -11,14 +11,11 @@
 
     <!-- Préconnecter pour améliorer les performances -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Inter:wght@900&display=swap"
         rel="stylesheet">
@@ -40,34 +37,34 @@
         </header>
 
         <!-- Section contenant l'image principale -->
-        <section class="img-container">
+        <div class="img-container">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="Restaurant OhMyFood, ambiance et plats raffinés">
-        </section>
+        </div>
 
         <!-- Section Menu -->
-        <section class="menu-card">
+        <div class="menu-card">
             <div class="heart-container">
                 <h1>La palette du goût</h1>
-                <input type="checkbox" id="heart4" class="heart-checkbox">
-                <label for="heart4">
+                <input type="checkbox" id="heart-gout" class="heart-checkbox">
+                <label for="heart-gout">
                     <i class="fa-solid fa-heart"></i>
                 </label>
             </div>
 
             <!-- Entrées -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2 class="menu-border">Entrées</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-1" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-1-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Fricassée d'escargots</h3>
                                 <p>Au piment d'Espelette</p>
                             </div>
                             <p class="prix">25€</p>
-                            <label for="checkbox-1" class="checkbox-label">
+                            <label for="checkbox-1-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -75,13 +72,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-2" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-2-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Foie gras de canard mi-cuit</h3>
                                 <p>Et ses copeaux de truffe noire</p>
                             </div>
                             <p class="prix">35€</p>
-                            <label for="checkbox-2" class="checkbox-label">
+                            <label for="checkbox-2-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -89,33 +86,33 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-3" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-3-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Œuf au plat</h3>
                                 <p>Assaisonné à la truffe sur lit de caviar</p>
                             </div>
                             <p class="prix">20€</p>
-                            <label for="checkbox-3" class="checkbox-label">
+                            <label for="checkbox-3-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Plats -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Plats</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-4" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-4-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Filet de bœuf aux herbes</h3>
-                                <p>SAccompagné de sa ribambelle de légumes</p>
+                                <p>Accompagné de sa ribambelle de légumes</p>
                             </div>
                             <p class="prix">40€</p>
-                            <label for="checkbox-4" class="checkbox-label">
+                            <label for="checkbox-4-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -123,13 +120,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-5" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-5-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Parmentier de queue de bœuf</h3>
                                 <p>À la truffe noire sur sa purée de panais</p>
                             </div>
                             <p class="prix">35€</p>
-                            <label for="checkbox-5" class="checkbox-label">
+                            <label for="checkbox-5-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -137,33 +134,33 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-6" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-6-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Filet de turbot</h3>
                                 <p>Aux agrumes</p>
                             </div>
                             <p class="prix">44€</p>
-                            <label for="checkbox-6" class="checkbox-label">
+                            <label for="checkbox-6-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Desserts -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Desserts</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-7" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-7-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Paris-Brest</h3>
                                 <p>Revisité</p>
                             </div>
                             <p class="prix">18€</p>
-                            <label for="checkbox-7" class="checkbox-label">
+                            <label for="checkbox-7-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -171,13 +168,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-8" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-8-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Macaron au chocolat d'exception</h3>
                                 <p>Et glace à la vanille de Madagascar</p>
                             </div>
                             <p class="prix">22€</p>
-                            <label for="checkbox-8" class="checkbox-label">
+                            <label for="checkbox-8-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -185,24 +182,22 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-9" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-9-gout" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Mousse au chocolat</h3>
                                 <p>Au piment d'Espelette et à la truffe noire</p>
                             </div>
                             <p class="prix">23€</p>
-                            <label for="checkbox-9" class="checkbox-label">
+                            <label for="checkbox-9-gout" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
-            <!-- butt<p>Coommander</p>on-->
-            <button>
-                <p>Commander</p>
-            </button>
-        </section>
+            </div>
+
+            <button type="button">Commander</button>
+        </div>
 
         <!-- Footer -->
         <footer>

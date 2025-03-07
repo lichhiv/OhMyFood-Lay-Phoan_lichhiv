@@ -11,14 +11,11 @@
 
     <!-- Préconnecter pour améliorer les performances -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Inter:wght@900&display=swap"
         rel="stylesheet">
@@ -40,24 +37,23 @@
         </header>
 
         <!-- Section contenant l'image principale -->
-        <section class="img-container">
+        <div class="img-container">
             <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="Restaurant OhMyFood, ambiance et plats raffinés">
-        </section>
+        </div>
 
         <!-- Section Menu -->
-        <section class="menu-card">
+        <div class="menu-card">
             <div class="heart-container">
                 <h1>La note enchantée</h1>
-                <input type="checkbox" id="heart4" class="heart-checkbox">
-                <label for="heart4">
+                <input type="checkbox" id="heart-enchantee" class="heart-checkbox">
+                <label for="heart-enchantee">
                     <i class="fa-solid fa-heart"></i>
                 </label>
             </div>
 
-
             <!-- Entrées -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2 class="menu-border">Entrées</h2>
                 <div class="card-content">
                     <article class="card-menu">
@@ -90,13 +86,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-2" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-2bis" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Homard et espuma de potiron</h3>
                                 <p>Marinés aux zestes d'orange</p>
                             </div>
                             <p class="prix">25€</p>
-                            <label for="checkbox-2" class="checkbox-label">
+                            <label for="checkbox-2bis" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -116,10 +112,10 @@
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Plats -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Plats</h2>
                 <div class="card-content">
                     <article class="card-menu">
@@ -164,10 +160,10 @@
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Desserts -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Desserts</h2>
                 <div class="card-content">
                     <article class="card-menu">
@@ -212,12 +208,10 @@
                         </div>
                     </article>
                 </div>
-            </section>
-            <!-- button-->
-            <button>
-                <p>Commander</p>
-            </button>
-        </section>
+            </div>
+
+            <button type="button">Commander</button>
+        </div>
 
         <!-- Footer -->
         <footer>

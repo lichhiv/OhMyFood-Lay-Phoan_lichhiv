@@ -11,14 +11,11 @@
 
     <!-- Préconnecter pour améliorer les performances -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Inter:wght@900&display=swap"
         rel="stylesheet">
@@ -46,34 +43,34 @@
         </header>
 
         <!-- Section contenant l'image principale -->
-        <section class="img-container">
+        <div class="img-container">
             <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Restaurant OhMyFood, ambiance et plats raffinés">
-        </section>
+        </div>
 
         <!-- Section Menu -->
-        <section class="menu-card">
+        <div class="menu-card">
             <div class="heart-container">
                 <h1>Le délice des sens</h1>
-                <input type="checkbox" id="heart4" class="heart-checkbox">
-                <label for="heart4">
+                <input type="checkbox" id="heart-sens" class="heart-checkbox">
+                <label for="heart-sens">
                     <i class="fa-solid fa-heart"></i>
                 </label>
             </div>
 
             <!-- Entrées -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2 class="menu-border">Entrées</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-1" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-1-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Tartare de thon</h3>
                                 <p>Assaisonné au yuzu</p>
                             </div>
                             <p class="prix">25€</p>
-                            <label for="checkbox-1" class="checkbox-label">
+                            <label for="checkbox-1-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -81,13 +78,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-2" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-2-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Bouchée de homard croustillant</h3>
                                 <p>Et sa farandole de petits légumes</p>
                             </div>
                             <p class="prix">35€</p>
-                            <label for="checkbox-2" class="checkbox-label">
+                            <label for="checkbox-2-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -95,33 +92,33 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-3" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-3-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Velouté de cèpes</h3>
                                 <p>Aux truffes</p>
                             </div>
                             <p class="prix">20€</p>
-                            <label for="checkbox-3" class="checkbox-label">
+                            <label for="checkbox-3-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Plats -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Plats</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-4" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-4-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Poulet rôti aux herbes de Provence</h3>
                                 <p>Et sa crème de truffe</p>
                             </div>
                             <p class="prix">40€</p>
-                            <label for="checkbox-4" class="checkbox-label">
+                            <label for="checkbox-4-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -129,13 +126,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-5" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-5-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Langouste rôtie</h3>
                                 <p>Et ses légumes de saison</p>
                             </div>
                             <p class="prix">35€</p>
-                            <label for="checkbox-5" class="checkbox-label">
+                            <label for="checkbox-5-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -143,33 +140,33 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-6" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-6-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Côte de bœuf Angus</h3>
                                 <p>Et sa purée de panais</p>
                             </div>
                             <p class="prix">44€</p>
-                            <label for="checkbox-6" class="checkbox-label">
+                            <label for="checkbox-6-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <!-- Desserts -->
-            <section class="menu-category">
+            <div class="menu-category">
                 <h2>Desserts</h2>
                 <div class="card-content">
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-7" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-7-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Farandole de desserts</h3>
                                 <p>Du chef</p>
                             </div>
                             <p class="prix">18€</p>
-                            <label for="checkbox-7" class="checkbox-label">
+                            <label for="checkbox-7-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -177,13 +174,13 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-8" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-8-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Crème brulée</h3>
                                 <p>Revisitée</p>
                             </div>
                             <p class="prix">22€</p>
-                            <label for="checkbox-8" class="checkbox-label">
+                            <label for="checkbox-8-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
@@ -191,24 +188,22 @@
 
                     <article class="card-menu">
                         <div class="menu-content">
-                            <input type="checkbox" id="checkbox-9" class="menu-checkbox">
+                            <input type="checkbox" id="checkbox-9-sens" class="menu-checkbox">
                             <div class="menu-text">
                                 <h3>Tiramisu</h3>
                                 <p>À la noisette</p>
                             </div>
                             <p class="prix">23€</p>
-                            <label for="checkbox-9" class="checkbox-label">
+                            <label for="checkbox-9-sens" class="checkbox-label">
                                 <i class="fa-solid fa-check"></i>
                             </label>
                         </div>
                     </article>
                 </div>
-            </section>
-            <!-- button-->
-            <button>
-                <p>Commander</p>
-            </button>
-        </section>
+            </div>
+
+            <button type="button">Commander</button>
+        </div>
 
         <!-- Footer -->
         <footer>

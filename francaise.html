@@ -11,14 +11,11 @@
 
     <!-- Préconnecter pour améliorer les performances -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Inter:wght@900&display=swap"
         rel="stylesheet">
@@ -40,169 +37,167 @@
         </header>
 
         <!-- Section contenant l'image principale -->
-        <section class="img-container">
+        <div class="img-container">
             <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="Restaurant OhMyFood, ambiance et plats raffinés">
-        </section>
+        </div>
 
         <!-- Section Menu -->
-        <section class="menu-card">
+        <div class="menu-card">
             <div class="heart-container">
                 <h1>À la française</h1>
-                <input type="checkbox" id="heart4" class="heart-checkbox">
-                <label for="heart4">
+                <input type="checkbox" id="heart-francaise" class="heart-checkbox">
+                <label for="heart-francaise">
                     <i class="fa-solid fa-heart"></i>
                 </label>
+            </div>
 
-
-                <!-- Entrées -->
-                <section class="menu-category">
-                    <h2 class="menu-border">Entrées</h2>
-                    <div class="card-content">
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-1" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Tartare de poulpe acidulé</h3>
-                                    <p>Aux zestes d'orange</p>
-                                </div>
-                                <p class="prix">25€</p>
-                                <label for="checkbox-1" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+            <!-- Entrées -->
+            <div class="menu-category">
+                <h2 class="menu-border">Entrées</h2>
+                <div class="card-content">
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-1-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
                             </div>
-                        </article>
+                            <p class="prix">25€</p>
+                            <label for="checkbox-1-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-2" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Velouté de légumes d'antan</h3>
-                                    <p>Carotte, panais, topinambour</p>
-                                </div>
-                                <p class="prix">35€</p>
-                                <label for="checkbox-2" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-2-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
                             </div>
-                        </article>
+                            <p class="prix">35€</p>
+                            <label for="checkbox-2-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-3" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Soupe à l'oignon</h3>
-                                    <p>Revisitée</p>
-                                </div>
-                                <p class="prix">20€</p>
-                                <label for="checkbox-3" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-3-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
                             </div>
-                        </article>
-                    </div>
-                </section>
+                            <p class="prix">20€</p>
+                            <label for="checkbox-3-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-                <!-- Plats -->
-                <section class="menu-category">
-                    <h2>Plats</h2>
-                    <div class="card-content">
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-4" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Coquilles Saint-Jacques</h3>
-                                    <p>Accompagnées d'une purée de panais</p>
-                                </div>
-                                <p class="prix">40€</p>
-                                <label for="checkbox-4" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+            <!-- Plats -->
+            <div class="menu-category">
+                <h2>Plats</h2>
+                <div class="card-content">
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-4-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
                             </div>
-                        </article>
+                            <p class="prix">40€</p>
+                            <label for="checkbox-4-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-5" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Magret de canard</h3>
-                                    <p>Et parmentier de pommes de terre</p>
-                                </div>
-                                <p class="prix">35€</p>
-                                <label for="checkbox-5" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-5-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
                             </div>
-                        </article>
+                            <p class="prix">35€</p>
+                            <label for="checkbox-5-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-6" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                                    <p>Sur son lit de gnocchis aux légumes</p>
-                                </div>
-                                <p class="prix">44€</p>
-                                <label for="checkbox-6" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-6-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
                             </div>
-                        </article>
-                    </div>
-                </section>
+                            <p class="prix">44€</p>
+                            <label for="checkbox-6-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-                <!-- Desserts -->
-                <section class="menu-category">
-                    <h2>Desserts</h2>
-                    <div class="card-content">
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-7" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Pétales de violettes glacés</h3>
-                                    <p>Et purée de noisettes</p>
-                                </div>
-                                <p class="prix">18€</p>
-                                <label for="checkbox-7" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h2>Desserts</h2>
+                <div class="card-content">
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-7-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
                             </div>
-                        </article>
+                            <p class="prix">18€</p>
+                            <label for="checkbox-7-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-8" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Fondant au chocolat</h3>
-                                    <p>Revisité</p>
-                                </div>
-                                <p class="prix">22€</p>
-                                <label for="checkbox-8" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-8-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
                             </div>
-                        </article>
+                            <p class="prix">22€</p>
+                            <label for="checkbox-8-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
 
-                        <article class="card-menu">
-                            <div class="menu-content">
-                                <input type="checkbox" id="checkbox-9" class="menu-checkbox">
-                                <div class="menu-text">
-                                    <h3>Millefeuille croustillant</h3>
-                                    <p>Myrtilles et pâte d'amande</p>
-                                </div>
-                                <p class="prix">23€</p>
-                                <label for="checkbox-9" class="checkbox-label">
-                                    <i class="fa-solid fa-check"></i>
-                                </label>
+                    <article class="card-menu">
+                        <div class="menu-content">
+                            <input type="checkbox" id="checkbox-9-fr" class="menu-checkbox">
+                            <div class="menu-text">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d'amande</p>
                             </div>
-                        </article>
-                    </div>
-                </section>
-                <!-- button-->
-                <button>
-                    <p>Commander</p>
-                </button>
-        </section>
+                            <p class="prix">23€</p>
+                            <label for="checkbox-9-fr" class="checkbox-label">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <button type="button">Commander</button>
+        </div>
 
         <!-- Footer -->
         <footer>
