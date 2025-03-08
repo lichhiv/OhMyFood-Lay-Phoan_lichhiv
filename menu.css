@@ -1,3 +1,31 @@
+:root {
+    /* Couleurs principales */
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+
+    /* Couleurs de fond */
+    --background-color: #f3f3f3;
+    --footer-background: rgba(53, 53, 53, 1);
+    --white: #fff;
+
+    /* Dimensions */
+    --border-radius-large: 40px;
+    --border-radius-medium: 25px;
+    --standard-padding: 20px;
+    --standard-gap: 20px;
+
+    /* Effets */
+    --box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+    /* Transitions */
+    --standard-transition: 0.3s ease;
+
+    /* Gradients */
+    --primary-gradient: linear-gradient(351.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    --hover-gradient: linear-gradient(200.64deg, #9356DC, #FF79DA);
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -16,7 +44,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    border: 4px solid #9356DC;
+    border: 4px solid var(--primary-color);
     border-radius: 50%;
     border-top-color: transparent;
     animation: spin 1s linear infinite;
@@ -108,13 +136,12 @@ header img {
 
 /**** MENU  ****/
 .menu-card {
-    padding: 10px;
+    padding: var(--standard-padding);
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: rgba(243, 243, 243, 1);
-    padding: 10px;
-    border-radius: 40px 40px 0 0;
+    background: var(--background-color);
+    border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
     margin-top: -50%;
     position: relative;
 }
@@ -122,7 +149,7 @@ header img {
 
 .card-content {
     display: flex;
-    gap: 20px;
+    gap: var(--standard-gap);
     flex-direction: column;
 
 }
@@ -146,7 +173,7 @@ header img {
 .menu-container i {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--standard-transition);
 }
 
 .fa-solid:hover {
@@ -175,19 +202,16 @@ header img {
 
 /* buuton */
 button {
-    color: white;
-}
-
-button {
-    background: linear-gradient(351.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: var(--white);
+    background: var(--primary-gradient);
     width: 150px;
     height: 50px;
-    border-radius: 25px;
+    border-radius: var(--border-radius-medium);
     border: none;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--box-shadow);
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--standard-padding);
+    margin-bottom: var(--standard-padding);
 }
 
 button a {
@@ -196,8 +220,7 @@ button a {
 }
 
 button:hover {
-    background:
-        linear-gradient(200.64deg, #9356DC, #FF79DA),
+    background: var(--hover-gradient),
         linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
 }
 
@@ -207,7 +230,7 @@ footer {
     /* flex-direction: column; */
     width: 100%;
     height: auto;
-    background: rgba(53, 53, 53, 1);
+    background: var(--footer-background);
 
 }
 

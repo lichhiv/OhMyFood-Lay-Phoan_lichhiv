@@ -10,14 +10,15 @@
 
 // Components
 @import 'components/buttons';
+@import 'components/loader';
 @import 'components/cards';
-@import 'components/checkbox';
+@import 'components/heart';
 
 // Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/menu';
-@import 'layout/responsive';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/menu';
+@import 'components/restaurants';
 
 // Pages
 @import 'pages/menu-page';

@@ -1,0 +1,65 @@
+// Mixin pour les media queries
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Le breakpoint '#{$breakpoint}' n'existe pas dans $breakpoints.";
+    }
+}
+
+// Mixin pour les box-shadows
+@mixin box-shadow($type) {
+    @if map-has-key($box-shadow, $type) {
+        box-shadow: map-get($box-shadow, $type);
+    }
+
+    @else {
+        @warn "Le type de box-shadow '#{$type}' n'existe pas dans $box-shadow.";
+    }
+}
+
+// Mixin pour les border-radius
+@mixin border-radius($size) {
+    @if map-has-key($border-radius, $size) {
+        border-radius: map-get($border-radius, $size);
+    }
+
+    @else {
+        @warn "La taille de border-radius '#{$size}' n'existe pas dans $border-radius.";
+    }
+}
+
+// Mixin pour les espacements
+@mixin spacing($property, $size) {
+    @if map-has-key($spacing, $size) {
+        #{$property}: map-get($spacing, $size);
+    }
+
+    @else {
+        @warn "La taille d'espacement '#{$size}' n'existe pas dans $spacing.";
+    }
+}
+
+// Mixin pour les transitions
+@mixin transition($properties...) {
+    $transitions: (
+    );
+
+@each $prop in $properties {
+    $transitions: append($transitions, $prop 0.3s ease, comma);
+}
+
+transition: $transitions;
+}
+
+// Mixin pour le gradient au survol
+@mixin hover-gradient {
+    &:hover {
+        background: $hover-gradient,
+            linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    }
+}
