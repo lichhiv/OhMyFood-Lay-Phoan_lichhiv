@@ -571,12 +571,32 @@ footer {
     transition: all 0.3s ease;
 }
 
+/* Style pour mobile (clic) */
 .heart-checkbox:checked+label i {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 0;
+}
+
+/* Style pour desktop (hover) */
+@media screen and (min-width: 1000px) {
+    .heart-checkbox:checked+label i {
+        background: none;
+        -webkit-text-fill-color: initial;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .heart-container label:hover i {
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 0;
+    }
 }
 
 .fa-heart:before {
