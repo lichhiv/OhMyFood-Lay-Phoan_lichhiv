@@ -204,8 +204,20 @@ button:hover {
   color: #7e7e7e;
 }
 
-.fonctionement-container ol li:hover i {
+/* Style pour mobile (clic) */
+.fonctionement-container ol li:active i {
   color: var(--primary-color);
+}
+
+/* Style pour desktop (hover) */
+@media screen and (min-width: 1000px) {
+  .fonctionement-container ol li:active i {
+    color: #7e7e7e;
+  }
+
+  .fonctionement-container ol li:hover i {
+    color: var(--primary-color);
+  }
 }
 
 .fonctionement-number {
