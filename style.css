@@ -200,6 +200,10 @@ button:hover {
   box-shadow: var(--box-shadow-light);
 }
 
+.fonctionement-container ol li i:hover {
+  color: var(--primary-color);
+}
+
 .fonctionement-number {
   display: flex;
   margin-left: -10px;
