@@ -29,6 +29,7 @@
   --hover-gradient: linear-gradient(200.64deg, #9356DC, #FF79DA);
 }
 
+/* Ancienne version du loader
 .loader {
   position: fixed;
   top: 0;
@@ -60,9 +61,66 @@
 }
 
 @keyframes fadeOut {
-
   0%,
   80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+*/
+
+/* Nouvelle version du loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 3s forwards;
+}
+
+.loader::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid var(--primary-color);
+  border-right: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--tertiary-color);
+  animation: spin 1s linear infinite, scale 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes fadeOut {
+
+  0%,
+  85% {
     opacity: 1;
   }
 
