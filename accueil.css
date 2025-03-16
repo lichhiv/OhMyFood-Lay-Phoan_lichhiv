@@ -1,0 +1,139 @@
+:root {
+    --primary: #9356DC;
+    --secondary: #FF79DA;
+    --tertiary: #99E2D0;
+    --bg-color: #f6f6f6;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.hero {
+    background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)),
+        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
+.hero-content {
+    max-width: 80%;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 350%;
+    margin-bottom: 3%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-size: 150%;
+    margin-bottom: 3%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2%;
+    padding: 4% 2%;
+    background-color: var(--bg-color);
+}
+
+.feature-card {
+    background: white;
+    padding: 4%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 250%;
+    color: var(--primary);
+    margin-bottom: 2%;
+}
+
+.feature-title {
+    color: var(--primary);
+    margin-bottom: 2%;
+    font-size: 150%;
+}
+
+.about {
+    padding: 4% 2%;
+    background: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about h2 {
+    color: var(--primary);
+    margin-bottom: 3%;
+    font-size: 250%;
+}
+
+.about p {
+    margin-bottom: 2%;
+    font-size: 110%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.5% 3%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(147, 86, 220, 0.4);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .tagline {
+        font-size: 120%;
+    }
+
+    .features {
+        padding: 4% 2%;
+    }
+
+    .about {
+        padding: 4% 2%;
+    }
+}
