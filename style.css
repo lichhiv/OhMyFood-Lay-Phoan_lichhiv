@@ -84,7 +84,10 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  animation: fadeOut 3s forwards;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 3s ease-in-out, visibility 3s ease-in-out;
+  pointer-events: none;
 }
 
 .loader::after {
@@ -96,38 +99,18 @@
   border-top: 5px solid var(--primary-color);
   border-right: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--tertiary-color);
-  animation: spin 1s linear infinite, scale 2s ease-in-out infinite;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 30s linear;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.loader:hover::after {
+  transform: translateY(-50%) rotate(3600deg);
 }
 
-@keyframes scale {
-
-  0%,
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-
-  50% {
-    transform: scale(1.2) rotate(180deg);
-  }
-}
-
-@keyframes fadeOut {
-
-  0%,
-  85% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+/* Le loader disparaîtra automatiquement après le chargement de la page */
+body:not(:empty) .loader {
+  opacity: 0;
+  visibility: hidden;
 }
 
 body {
@@ -396,24 +379,18 @@ button:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0;
+  transform: scale(1.1);
 }
 
 /* Style pour desktop (hover) */
 @media screen and (min-width: 1000px) {
-  .heart-checkbox:checked+label i {
-    background: none;
-    -webkit-text-fill-color: initial;
-    -webkit-background-clip: initial;
-    background-clip: initial;
-    -webkit-text-stroke: 1px black;
-  }
-
   .heart-container label:hover i {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 0;
+    transform: scale(1.1);
   }
 }
 
