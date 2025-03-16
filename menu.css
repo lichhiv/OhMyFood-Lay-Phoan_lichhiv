@@ -70,7 +70,7 @@
 */
 
 /* Loader sans keyframes */
-.loader {
+.loader-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -83,29 +83,47 @@
     z-index: 9999;
     opacity: 1;
     visibility: visible;
-    transition: opacity 3s ease-in-out, visibility 3s ease-in-out;
-    pointer-events: none;
+    transition: opacity 3s ease-out;
 }
 
-.loader::after {
-    content: "";
-    width: 60px;
-    height: 60px;
-    border: 5px solid transparent;
+.loader {
+    display: flex;
+    gap: 8px;
+}
+
+.loader__item {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border-top: 5px solid var(--primary-color);
-    border-right: 5px solid var(--secondary-color);
-    border-bottom: 5px solid var(--tertiary-color);
-    transform: translateY(-50%) rotate(0deg);
-    transition: transform 30s linear;
+    transition: transform 0.5s ease-in-out;
 }
 
-.loader:hover::after {
-    transform: translateY(-50%) rotate(3600deg);
+.loader__item--1 {
+    background-color: var(--primary-color);
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.loader__item--2 {
+    background-color: var(--secondary-color);
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.loader__item--3 {
+    background-color: var(--tertiary-color);
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.loader__item--1:hover,
+.loader__item--2:hover,
+.loader__item--3:hover {
+    transform: translateY(-20px);
 }
 
 /* Le loader disparaîtra automatiquement après le chargement de la page */
-body:not(:empty) .loader {
+body:not(:empty) .loader-container {
     opacity: 0;
     visibility: hidden;
 }
