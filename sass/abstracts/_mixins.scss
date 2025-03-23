@@ -1,0 +1,42 @@
+// Mixin pour les media queries
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+// Mixin pour les box-shadows
+@mixin box-shadow($type) {
+    @if map-has-key($box-shadow, $type) {
+        box-shadow: map-get($box-shadow, $type);
+    }
+}
+
+// Mixin pour les border-radius
+@mixin border-radius($size) {
+    @if map-has-key($border-radius, $size) {
+        border-radius: map-get($border-radius, $size);
+    }
+}
+
+// Mixin pour les espacements
+@mixin spacing($property, $size) {
+    @if map-has-key($spacing, $size) {
+        #{$property}: map-get($spacing, $size);
+    }
+}
+
+// Mixin pour la transition standard
+@mixin transition {
+    transition: all 0.3s ease;
+}
+
+// Mixin pour le gradient au survol
+@mixin hover-gradient {
+    &:hover {
+        background: $hover-gradient,
+            linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    }
+}

@@ -1,0 +1,48 @@
+.checkbox-label {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    background: $tertiary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    i {
+        color: white;
+        font-size: 20px;
+        transform: rotate(0);
+        transition: transform 0.3s ease;
+        background: white;
+        padding: 3px;
+    }
+}
+
+.menu-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    &:checked {
+        &~.checkbox-label {
+            transform: translateX(-60px);
+
+            i {
+                transform: rotate(360deg);
+            }
+        }
+
+        &~.prix {
+            transform: translateX(-20px);
+            margin-right: 35px;
+        }
+    }
+}

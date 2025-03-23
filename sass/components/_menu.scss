@@ -1,0 +1,26 @@
+.menu-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: $color-bg-light;
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .menu-card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-category {
+        padding-left: 15%;
+        /* Ajout du padding gauche */
+        padding-right: 15%;
+        /* Ajout du padding droit */
+    }
+}

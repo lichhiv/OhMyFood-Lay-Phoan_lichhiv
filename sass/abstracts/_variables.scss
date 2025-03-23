@@ -1,0 +1,57 @@
+// Couleurs principales
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+// Couleurs de fond
+$background-light: #F6F6F6;
+$background-grey: #EAEAEA;
+$white: #fff;
+$footer-background: #353535;
+
+// Couleurs texte
+$text-color-green: #008766;
+
+// Dimensions
+$border-radius: (
+    'large': 25px,
+    'medium': 20px,
+    'small': 15px
+);
+$spacing: (
+    'standard': 20px,
+    'large': 30px
+);
+
+// Breakpoints
+$breakpoints: (
+    'tablet': 768px,
+    'desktop': 1000px
+);
+
+// Effets
+$box-shadow: (
+    'light': 0px 4px 15px rgba(0, 0, 0, 0.1),
+    'medium': 0px 4px 10px rgba(0, 0, 0, 0.25),
+    'header': 0px 2px 4px rgba(0, 0, 0, 0.15)
+);
+
+// Gradients
+$primary-gradient: linear-gradient(351.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+$hover-gradient: linear-gradient(200.64deg, $primary-color, $secondary-color);
+
+// Fonts
+$main-font: 'Roboto', sans-serif;
+
+// Spacing
+$padding-standard: 15px;
+$margin-standard: 20px;
+
+// Breakpoints
+$mobile: 768px;
+$breakpoint-desktop: 1024px;
+
+// Dimensions
+$header-img-width-mobile: 50%;
+$header-img-width-desktop: 20%;
+$menu-card-width-desktop: 80%;
