@@ -599,3 +599,45 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+.heart {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.heart i {
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.heart .fa-solid {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.heart:hover .fa-solid {
+  opacity: 1;
+}
+
+.heart:hover .fa-regular {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .heart:hover .fa-solid {
+    opacity: 0;
+  }
+
+  .heart:hover .fa-regular {
+    opacity: 1;
+  }
+}
