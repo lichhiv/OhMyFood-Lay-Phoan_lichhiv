@@ -236,7 +236,20 @@ header img {
 }
 
 .menu-container {
-    display: none;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .menu-container p {
@@ -679,4 +692,73 @@ footer {
 .fa-heart {
     padding: 16px;
     font-size: 25px;
+}
+
+.menu-category {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.menu-category:nth-child(1) {
+    animation-delay: 2.2s;
+}
+
+.menu-category:nth-child(2) {
+    animation-delay: 2.4s;
+}
+
+.menu-category:nth-child(3) {
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les plats individuels */
+.menu-category ul li {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInLeft 0.6s ease forwards;
+}
+
+.menu-category ul li:nth-child(1) {
+    animation-delay: 2.8s;
+}
+
+.menu-category ul li:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.menu-category ul li:nth-child(3) {
+    animation-delay: 3.2s;
+}
+
+.menu-category ul li:nth-child(4) {
+    animation-delay: 3.4s;
+}
+
+.menu-category ul li:nth-child(5) {
+    animation-delay: 3.6s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
