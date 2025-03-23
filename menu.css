@@ -242,6 +242,7 @@ header img {
     animation-delay: 2s;
 }
 
+/* Animation pour toutes les catégories */
 .menu-category {
     opacity: 0;
     transform: translateY(20px);
@@ -249,18 +250,20 @@ header img {
     animation-fill-mode: forwards;
 }
 
-.menu-category:nth-child(1) {
+/* Délais pour les catégories */
+.menu-category:nth-of-type(1) {
     animation-delay: 2.2s;
 }
 
-.menu-category:nth-child(2) {
+.menu-category:nth-of-type(2) {
     animation-delay: 2.4s;
 }
 
-.menu-category:nth-child(3) {
+.menu-category:nth-of-type(3) {
     animation-delay: 2.6s;
 }
 
+/* Animation pour tous les plats */
 .menu-category ul li {
     opacity: 0;
     transform: translateX(-20px);
@@ -268,24 +271,65 @@ header img {
     animation-fill-mode: forwards;
 }
 
-.menu-category ul li:nth-child(1) {
+/* Délais pour les plats */
+.menu-category:nth-of-type(1) ul li:nth-child(1) {
     animation-delay: 2.8s;
 }
 
-.menu-category ul li:nth-child(2) {
+.menu-category:nth-of-type(1) ul li:nth-child(2) {
     animation-delay: 3s;
 }
 
-.menu-category ul li:nth-child(3) {
+.menu-category:nth-of-type(1) ul li:nth-child(3) {
     animation-delay: 3.2s;
 }
 
-.menu-category ul li:nth-child(4) {
+.menu-category:nth-of-type(1) ul li:nth-child(4) {
     animation-delay: 3.4s;
 }
 
-.menu-category ul li:nth-child(5) {
+.menu-category:nth-of-type(1) ul li:nth-child(5) {
     animation-delay: 3.6s;
+}
+
+.menu-category:nth-of-type(2) ul li:nth-child(1) {
+    animation-delay: 3.8s;
+}
+
+.menu-category:nth-of-type(2) ul li:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.menu-category:nth-of-type(2) ul li:nth-child(3) {
+    animation-delay: 4.2s;
+}
+
+.menu-category:nth-of-type(2) ul li:nth-child(4) {
+    animation-delay: 4.4s;
+}
+
+.menu-category:nth-of-type(2) ul li:nth-child(5) {
+    animation-delay: 4.6s;
+}
+
+.menu-category:nth-of-type(3) ul li:nth-child(1) {
+    animation-delay: 4.8s;
+}
+
+.menu-category:nth-of-type(3) ul li:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.menu-category:nth-of-type(3) ul li:nth-child(3) {
+    animation-delay: 5.2s;
+}
+
+.menu-category:nth-of-type(3) ul li:nth-child(4) {
+    animation-delay: 5.4s;
+}
+
+.menu-category:nth-of-type(3) ul li:nth-child(5) {
+    animation-delay: 5.6s;
 }
 
 @keyframes fadeIn {
