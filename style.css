@@ -582,16 +582,15 @@ footer {
   /* Footer styles modifiés */
   footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   footer .footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 60px 60px 40px 0;
     max-width: 1200px;
-    margin: 0 auto;
     gap: 50px;
   }
 
