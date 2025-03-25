@@ -656,7 +656,7 @@ footer {
 }
 
 .heart-container i {
-    color: white;
+    color: var(--background-color);
     -webkit-text-stroke: 1px black;
     transition: all 0.3s ease;
 }
