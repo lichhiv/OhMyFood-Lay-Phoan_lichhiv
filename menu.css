@@ -539,8 +539,7 @@ footer {
     }
 
     .menu-category {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding: 0 15%;
     }
 
     .menu-card {
@@ -584,7 +583,7 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 20px 40px;
+        padding: 30px 40px;
     }
 
     .footer img {
@@ -613,16 +612,16 @@ footer {
 
     footer {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     footer .footer {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
+        padding: 60px 60px 40px 0;
         max-width: 1200px;
-        margin: 0 auto;
+        /*  margin: 0 auto;*/
         gap: 50px;
     }
 
