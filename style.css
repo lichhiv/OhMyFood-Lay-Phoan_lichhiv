@@ -671,3 +671,7 @@ h1 {
   font-weight: 700;
   font-size: 24px;
 }
+
+.fonctionement .fa-sharp.fa-solid.fa-store {
+  color: var(--primary-color);
+}
